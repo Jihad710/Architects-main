@@ -12,7 +12,6 @@
 .header {
     padding: 50px 25px;
     width: 1920;
-    max-width: 1250px;
     margin: 0 auto;
   }
   .primary-title{
@@ -26,7 +25,7 @@
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
   }
   
@@ -83,6 +82,7 @@
 }
 .banner-image{
     padding-bottom:30px;
+
 }
 
 /* Features section style  */
@@ -203,12 +203,15 @@ h2 .spn-clr-two{
   border-radius: 8px;
   text-align: center;
   font-size: 26;
+  z-index: 1;
+  top: -10px;
   
 }
 .experience-info{
   padding-top: 35px;
   color: #FFFFFF;
-  margin-top: -50px;
+  position: relative;
+  
   
 }
 .experiece-title{
@@ -344,3 +347,16 @@ h2 .spn-clr-two{
   text-align: center;
   padding-top: 42px;
 }
+
+
+/* Responsive for Mobile start */
+
+@media only screen and (max-width: 576px )  {
+ .banner-image{
+    padding-bottom:30px;
+    width: 100%;
+    
+    
+}
+
+  }
